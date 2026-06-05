@@ -44,7 +44,7 @@ export function FlowerReveal() {
             transition={{ duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
           >
             <Heart size={34} fill="currentColor" aria-hidden="true" />
-            <h1>Now look at me, cutie</h1>
+            <h1>Arr bwar ly doh py  nw😛</h1>
           </motion.div>
         )}
       </AnimatePresence>
