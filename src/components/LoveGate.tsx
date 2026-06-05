@@ -48,7 +48,7 @@ export function LoveGate({ onYes }: LoveGateProps) {
   }, [noClicks])
 
   return (
-    <section className="lovegate-clean-page">
+    <section className="lovegate-clean-page light-blue-theme">
       <div className="lovegate-clean-wrap">
         <motion.div
           className="lovegate-clean-card"

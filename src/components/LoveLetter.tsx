@@ -11,7 +11,7 @@ const lines = [
 
 export function LoveLetter({ onNext }: LoveLetterProps) {
   return (
-    <div className="letter-page">
+    <div className="letter-page light-blue-theme">
       <motion.div
         className="letter-card glass-panel"
         initial={{ opacity: 0, y: 28 }}

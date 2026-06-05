@@ -73,7 +73,7 @@ export function QuestionGate({ onComplete, onRedroomMusicStart }: QuestionGatePr
   }
 
   return (
-    <div className="gate-shell question-shell">
+    <div className="gate-shell question-shell light-blue-theme">
       <div className="glass-panel question-panel">
         {!selected ? (
           <>

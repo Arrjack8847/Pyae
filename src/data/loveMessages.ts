@@ -17,7 +17,7 @@ export const loveMessages: LoveMessage[] = [
   {
     id: 'favorite-person',
     label: 'still my favorite person 💗',
-    note: 'Even after one month, you are still the person I want to talk to the most.',
+    note: 'Even after five month, you are still the person I want to talk to the most.',
     x: 650,
     y: 860,
     floatDuration: 12.4,

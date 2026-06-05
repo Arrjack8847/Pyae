@@ -11,7 +11,7 @@ export function FlowerReveal() {
   }, [])
 
   return (
-    <div className="flower-page">
+    <div className="flower-page light-blue-theme">
       <motion.div
         className="flower-bloom final-bouquet"
         initial={{ opacity: 0, y: 36, scale: 0.86, rotate: -3 }}

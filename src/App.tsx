@@ -25,7 +25,6 @@ function App() {
   const [musicFinaleSignal, setMusicFinaleSignal] = useState(0)
   const transitionMusicRef = useRef<HTMLAudioElement | null>(null)
 
-  const isCuteHome = step === 'loveGate'
   const isRomanticSky = step === 'romanticSky'
   const startRedroomMusic = useCallback(() => {
     const music = transitionMusicRef.current
@@ -41,7 +40,7 @@ function App() {
   return (
     <main
       className={`min-h-svh overflow-hidden transition-colors duration-500 ${
-        isCuteHome ? 'cute-home-theme' : isRomanticSky ? 'bg-[#08030f] text-white' : 'cute-story-theme'
+        isRomanticSky ? 'bg-[#08030f] text-white' : 'light-blue-theme'
       }`}
     >
       <div className="fixed inset-0 pointer-events-none" aria-hidden="true">
@@ -50,19 +49,12 @@ function App() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,65,188,0.13),transparent_30%),linear-gradient(180deg,#020104_0%,#0a0211_55%,#050107_100%)]" />
             <div className="stars-field" />
           </>
-        ) : isCuteHome ? (
-          <>
-            <div className="absolute inset-0 cute-home-backdrop" />
-            <div className="cute-cloud-band cute-cloud-band-top" />
-            <div className="cute-cloud-band cute-cloud-band-bottom" />
-            <div className="cute-sparkle-field" />
-          </>
         ) : (
           <>
-            <div className="absolute inset-0 cute-story-backdrop" />
-            <div className="cute-cloud-band cute-cloud-band-top cute-story-cloud" />
-            <div className="cute-cloud-band cute-cloud-band-bottom cute-story-cloud" />
-            <div className="stars-field cute-story-stars" />
+            <div className="absolute inset-0 light-blue-backdrop" />
+            <div className="light-blue-cloud-band light-blue-cloud-band-top" />
+            <div className="light-blue-cloud-band light-blue-cloud-band-bottom" />
+            <div className="light-blue-sparkle-field" />
           </>
         )}
       </div>
