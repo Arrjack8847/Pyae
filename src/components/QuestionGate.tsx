@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { Sparkles } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { questionOptions } from '../data/questionOptions'
 
