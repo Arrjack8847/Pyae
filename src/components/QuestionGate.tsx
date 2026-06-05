@@ -77,7 +77,7 @@ export function QuestionGate({ onComplete, onRedroomMusicStart }: QuestionGatePr
       <div className="glass-panel question-panel">
         {!selected ? (
           <>
-            <Sparkles className="mx-auto mb-4 text-[#f6a94f]" size={26} aria-hidden="true" />
+           
             <h1>Before I show you...</h1>
             <p>I have one tiny cute question for you</p>
             <h2>What kind of room do you want to spend most of the time with me?</h2>
