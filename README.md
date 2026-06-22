@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# Pyae — Interactive Romantic Web Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personalised interactive web experience created as a digital surprise gift. The project guides the visitor through a sequence of playful choices, animated scenes, music, a love letter, and a final flower reveal.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a small storytelling website built around interaction and emotion rather than a traditional page layout.
 
-## React Compiler
+The experience begins with a choice-based opening screen and continues through several animated stages:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Love gate
+* Question gate
+* Romantic sky scene
+* Love letter
+* Flower reveal
 
-## Expanding the ESLint configuration
+Each stage uses smooth transitions, visual effects, and audio to create a memorable digital gift experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Multi-step interactive storytelling flow
+* Animated transitions between sections
+* Playful “Yes / No” interaction
+* Dynamic button movement and scaling
+* Animated GIF reactions
+* Background music playback
+* Romantic sky visual scene
+* Digital love letter section
+* Final flower reveal
+* Responsive layout for desktop and mobile
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Lucide React
+* ESLint
+
+## Project Structure
+
+```text
+src/
+  components/
+    FlowerReveal.tsx
+    LoveGate.tsx
+    LoveLetter.tsx
+    QuestionGate.tsx
+    RomanticSky.tsx
+  App.tsx
+  main.tsx
+
+public/
+  gifs/
+  music.mp3
+  images/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Local Setup
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Clone the repository:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/Arrjack8847/Pyae.git
+cd Pyae
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local site in your browser:
+
+```text
+http://localhost:5173
+```
+
+## Available Scripts
+
+```bash
+npm run dev      # Start the Vite development server
+npm run build    # Type-check and create a production build
+npm run lint     # Run ESLint
+npm run preview  # Preview the production build locally
+```
+
+## What I Learned
+
+* Building a multi-step interaction flow with React state
+* Creating animated page transitions with Framer Motion
+* Managing interactive buttons and dynamic UI feedback
+* Adding sound effects and background audio in a React application
+* Designing emotional digital storytelling through frontend development
+* Structuring reusable components for different stages of an experience
+
+## Author
+
+**Soe Min Khant**
+
+* GitHub: https://github.com/Arrjack8847
+* Portfolio: https://jack-nex-studio.vercel.app
+
+---
+
+This is a personal creative project created for interactive storytelling and frontend experimentation.
